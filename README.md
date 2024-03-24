@@ -1,2 +1,2 @@
-# fairclinical.github.io
+# FAIRClinical
 FAIRClinical website.
