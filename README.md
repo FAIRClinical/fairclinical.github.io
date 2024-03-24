@@ -1,2 +1,0 @@
-# FAIRClinical
-FAIRClinical website.
