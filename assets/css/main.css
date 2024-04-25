@@ -124,33 +124,51 @@ mark {
 	margin-right: auto;
 	text-align: center;
 }
-.members-group {
+.member-group {
 	margin-bottom: 1em;
 }
-.members-pi .profile-pic {
-	width: 100px;
-	height: 100px;
+.member .icon {
+	font-size: 3.25em;
+	margin-bottom: 0 !important;
+	display: block;
+	padding: 0.3em;
 }
-.members-pi {
+
+.member-pi {
 	border-right: solid 1px black;
 	padding-right: 3em !important;
 	width: 20em;
 }
 
-.members-underling .profile-pic{
+.member .profile-pic {
 	width: 75px;
 	height: 75px;
 }
-.members-underling-container {
-
+.member-container {
+	display: block;
 }
-.members-underling p {
-	font-size: small;
+.member {
+	display: inline-block;
 	border: solid 1px black;
 	border-radius: 5px;
-	padding: 1em;
+	width: 10em;
+	height: 10em;
+	overflow-wrap: break-word;
+	margin-bottom: 0.2em;
+	padding-top: 1em;
 }
-
+.member p {
+	font-size: small;
+	margin: 0;
+	display: grid;
+}
+.org-logo {
+	width: 250px;
+	height: 100px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 2em;
+}
 input::-moz-focus-inner {
 	border: 0;
 	padding: 0;
