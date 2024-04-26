@@ -161,6 +161,7 @@ mark {
 	font-size: small;
 	margin: 0;
 	display: grid;
+	line-height: 1.7em;
 }
 .org-logo {
 	width: 250px;
