@@ -143,6 +143,7 @@ mark {
 .member .profile-pic {
 	width: 75px;
 	height: 75px;
+	object-fit: contain;
 }
 .member-container {
 	display: block;
