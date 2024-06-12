@@ -10,6 +10,7 @@
     <meta charset="utf-8"/>
     <meta content="width=device-width, initial-scale=1, user-scalable=no" name="viewport"/>
     <link href="assets/css/main.css" rel="stylesheet"/>
+    <link href="assets/css/jquery-ui.structure.min.css" rel="stylesheet">
     <noscript>
         <link href="assets/css/noscript.css" rel="stylesheet"/>
     </noscript>
@@ -35,103 +36,107 @@
                     <div class="member-container">
                         <div class="member">
                             <img alt="" class="profile-pic" src="./images/Anais.jpg"/>
-                            <p><b>Anais Mottaz</b><br>
+                            <p><b class="member-name">Anais Mottaz</b><br>
                                 Research Associate<br>
                                 Swiss Institute of Bioinformatics
                             </p>
                         </div>
                         <div class="member">
-                            <img alt="" class="profile-pic" src="./images/Basel.jpg"/>
-                            <p><b>Dr. Basel M.M. Alshaikhdeeb</b><br>
+                            <img alt="" class="profile-pic" src="./images/Basel.jpeg"/>
+                            <p><b class="member-name">Dr. Basel M.M. Alshaikhdeeb</b><br>
                                 Postdoctoral Researcher<br>
-                                Swiss Institute of Bioinformatics
+                                Swiss Institute of Bioinformatics<br>
+                                <button class="member-bio-btn">Bio</button>
                             </p>
+                            <div class="expanded-text">
+                                Basel Alshaikhdeeb, he holds a PhD degree of Computer Science from the National University of Malaysia, currently he is working as a postdoctoral researcher at the Luxembourg Centre for Systems Biomedicine (LCSB), University of Luxembourg, his research interests are Biomedical Text Mining, Large Language Models (LLMs), Biomedical Named Entity Recognition (BNER), Relation Extraction (RE), and Knowledge Graph.
+                            </div>
                         </div>
                         <div class="member">
                             <span class="icon solid style4 fa-user"></span>
-                            <p><b>Carlos Cuevas-Villarmin</b><br>
+                            <p><b class="member-name">Carlos Cuevas-Villarmin</b><br>
                                 MSc Student<br>
                                 Universite Paris-Saclay
                             </p>
                         </div>
                         <div class="member">
                             <span class="icon solid style4 fa-user"></span>
-                            <p><b>Javier-Alejandro Lopetegui-Gonzalez</b><br>
+                            <p><b class="member-name">Javier-Alejandro Lopetegui-Gonzalez</b><br>
                                 MSc Student<br>
                                 Universite Paris-Saclay
                             </p>
                         </div>
                         <div class="member">
                             <span class="icon solid style4 fa-user"></span>
-                            <p><b>Katherine</b><br>
+                            <p><b class="member-name">Katherine</b><br>
                                 Universite Paris-Saclay
                             </p>
                         </div>
                         <div class="member">
                             <span class="icon solid style4 fa-user"></span>
-                            <p><b>Mathieu</b><br>
+                            <p><b class="member-name">Mathieu</b><br>
                                 Universite Paris-Saclay
                             </p>
                         </div>
                         <div class="member">
                             <span class="icon solid style4 fa-user"></span>
-                            <p><b>Mathilde</b><br>
+                            <p><b class="member-name">Mathilde</b><br>
                                 PhD Student<br>
                                 Universite Paris-Saclay
                             </p>
                         </div>
                         <div class="member">
                             <img alt="" class="profile-pic" src="./images/Nona.jpg"/>
-                            <p><b>Dr. Naderi Nona</b><br>
+                            <p><b class="member-name">Dr. Naderi Nona</b><br>
                                 Universite Paris-Saclay</p>
                         </div>
                         <div class="member">
                             <span class="icon solid style4 fa-user"></span>
-                            <p><b>Patrick Paroubek</b><br>
+                            <p><b class="member-name">Patrick Paroubek</b><br>
                                 Postdoctoral Researcher<br>
                                 Universite Paris-Saclay
                             </p>
                         </div>
                         <div class="member">
                             <img alt="" class="profile-pic" src="./images/Patrick.jpg"/>
-                            <p><b>Professor Patrick Ruch</b><br>
+                            <p><b class="member-name">Professor Patrick Ruch</b><br>
                                 SIB Text Mining Group Leader<br>
                                 Swiss Institute of Bioinformatics</p>
                         </div>
                         <div class="member">
                             <span class="icon solid style4 fa-user"></span>
-                            <p><b>Pierre</b><br>
+                            <p><b class="member-name">Pierre</b><br>
                                 Postdoctoral Researcher<br>
                                 Universite Paris-Saclay
                             </p>
                         </div>
                         <div class="member">
                             <span class="icon solid style4 fa-user"></span>
-                            <p><b>Professor Sarah Cohen-Boulakia</b><br>
+                            <p><b class="member-name">Professor Sarah Cohen-Boulakia</b><br>
                                 Postdoctoral Researcher<br>
                                 Universite Paris-Saclay
                             </p>
                         </div>
                         <div class="member">
                             <span class="icon solid style4 fa-user"></span>
-                            <p><b>Thomas Rowlands</b><br>
+                            <p><b class="member-name">Thomas Rowlands</b><br>
                                 Research Software Engineer<br>
                                 University of Leicester
                             </p>
                         </div>
                         <div class="member">
                             <img alt="" class="profile-pic" src="./images/Tim.jpg"/>
-                            <p><b>Dr. Tim Beck</b><br>
+                            <p><b class="member-name">Dr. Tim Beck</b><br>
                                 University of Nottingham</p>
                         </div>
                         <div class="member">
                             <img alt="" class="profile-pic" src="./images/Venkata.jpg"/>
-                            <p><b>Dr. Venkata Satagopam</b><br>
+                            <p><b class="member-name">Dr. Venkata Satagopam</b><br>
                                 Universite Du Luxembourg</p>
                         </div>
                         <div class="member">
                             <span class="icon solid style4 fa-user"></span>
-                            <p><b>Virgile</b><br>
+                            <p><b class="member-name">Virgile</b><br>
                                 Universite Paris-Saclay
                             </p>
                         </div>
@@ -154,5 +159,58 @@
         <script src="assets/js/util.js"></script>
         <script src="assets/js/main.js"></script>
     </div>
+</section>
+<div id="member-dialog" draggable="false" closeText="close">
+    <div class="dialog-content">
+        <div class="profile-picture">
+            <img id="dialog-profile-pic" src="profile-picture-url.jpg" alt="Profile Picture">
+        </div>
+        <div class="bio">
+            <h2 id="dialog-name">Name</h2>
+            <p id="dialog-bio-content">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam et ligula metus.</p>
+        </div>
+    </div>
+</div>
 </body>
+<script src="assets/js/jquery-ui.min.js"></script>
+<script>
+    $(document).ready(function() {
+        $("#member-dialog").dialog({
+            autoOpen: false,
+            show: {
+                effect: "fade",
+                duration: 250
+            },
+            hide: {
+                effect: "fade",
+                duration: 250
+            },
+            closeText: "close",
+            draggable: false,
+            buttons: [
+                {
+                    text: "Close",
+                    click: function() {
+                        $(this).dialog("close");
+                    }
+                }
+            ]
+
+        });
+        $(".ui-dialog-titlebar").hide();
+
+       $(".member-bio-btn").on("click", function () {
+           let newSrc = $(this).parents(".member").find(".profile-pic")[0].src;
+           $("#dialog-profile-pic").attr("src", newSrc);
+
+           let newText = $(this).parents(".member").find(".expanded-text")[0].textContent;
+           $("#dialog-bio-content").text(newText);
+
+           let newName = $(this).parents(".member").find(".member-name")[0].textContent;
+           $("#dialog-name").text(newName);
+
+           $("#member-dialog").dialog("open");
+       });
+    });
+</script>
 </html>

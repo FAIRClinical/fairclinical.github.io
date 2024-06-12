@@ -143,7 +143,7 @@ mark {
 .member .profile-pic {
 	width: 75px;
 	height: 75px;
-	object-fit: contain;
+	object-fit: cover;
 }
 .member-container {
 	display: block;
@@ -163,6 +163,76 @@ mark {
 	margin: 0;
 	display: grid;
 	line-height: 1.7em;
+}
+.ui-dialog-titlebar-close {
+	background-color: white;
+	color: black;
+}
+.ui-dialog {
+	font-family: 'Arial', sans-serif;
+	background-color: #ffffff;
+	min-width: 40vw;
+	margin: auto;
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+	border-radius: 10px;
+	.dialog-content {
+		display: flex;
+		align-items: center;
+	}
+
+	.profile-picture {
+		flex-shrink: 0;
+		width: 100px;
+		height: 100px;
+		border-radius: 50%;
+		overflow: hidden;
+		margin-right: 20px;
+		font-size: 0.5em;
+		text-align: center;
+	}
+
+	.profile-picture img {
+		width: 100%;
+		height: 100%;
+		object-fit: cover;
+	}
+
+	.bio {
+		flex-grow: 1;
+	}
+
+	.bio h2 {
+		margin: 0 0 10px;
+		font-size: 24px;
+		color: #333;
+	}
+
+	.bio p {
+		margin: 0;
+		font-size: 16px;
+		color: #666;
+	}
+
+	.ui-button {
+		font-size: 0.5em;
+		text-align: center;
+	}
+
+}
+.member-bio-btn {
+	width: 50%;
+	background-color: #4a87d3 !important;
+	color: white !important;
+	margin: auto;
+}
+.member-bio-btn:hover {
+	background-color: #ffffff !important;
+	color: #4a87d3 !important;
+}
+
+
+.member > .expanded-text {
+	display: none;
 }
 .org-logo {
 	width: 250px;
