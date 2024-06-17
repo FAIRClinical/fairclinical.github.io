@@ -118,6 +118,9 @@ mark {
 	background-color: transparent;
 	color: inherit;
 }
+.banner-logo {
+	max-width: 80vw;
+}
 .center-container {
 	width: 70%;
 	margin-left: auto;
