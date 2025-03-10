@@ -133,10 +133,12 @@ mark {
 .member .icon {
 	font-size: 3.05em;
 	margin-bottom: 0 !important;
-	display: table-header-group;
+	display: block;
 	top: 8%;
 	width: 75px;
 	height: 75px;
+	margin-left: auto;
+	margin-right: auto;
 }
 
 .member-pi {
@@ -150,12 +152,14 @@ mark {
 	height: 75px;
 	object-fit: cover;
 	display: table-row;
+	margin-left: auto;
+	margin-right: auto;
 }
 .member-container {
 	display: block;
 }
 .member {
-	display: inline-table;
+	display: inline-block;
 	border: solid 1px black;
 	border-radius: 5px;
 	width: 10em;
