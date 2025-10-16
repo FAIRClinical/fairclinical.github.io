@@ -1,0 +1,174 @@
+<!DOCTYPE HTML>
+<!--
+	Photon by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html lang="en-US">
+<head>
+    <title>FAIRClinical</title>
+    <meta charset="utf-8"/>
+    <meta content="width=device-width, initial-scale=1, user-scalable=no" name="viewport"/>
+    <link href="assets/css/main.css" rel="stylesheet"/>
+    <link href="assets/css/jquery-ui.structure.min.css" rel="stylesheet">
+    <noscript>
+        <link href="assets/css/noscript.css" rel="stylesheet"/>
+    </noscript>
+</head>
+<!-- Nav Bar-->
+<div class="topnav" id="nav">
+    <a href="index.html">Home</a>
+    <a href="members.html">Team</a>
+    <a href="news.html">News</a>
+    <a class="active" href="deliverables.html">Deliverables</a>
+    <a href="publications.html">Publications</a>
+    <a class="icon" href="javascript:void(0);" onclick="myFunction()">
+        <i class="fa fa-bars"></i>
+    </a>
+</div>
+<body class="is-preload">
+<!-- Five -->
+<section class="main style1" id="five">
+    <div class="container">
+        <section>
+
+                <h2>Deliverables</h2>
+                <hr>
+                <!--								UK group -->
+                <div class="link-list">
+                    <a href="documents/deliverables/D1.3.pdf" target="_blank" rel="noopener noreferrer">
+                        <div class="list-card">
+                            <div class="content">
+                                <h3 class="title"><strong>Deliverable D1.3:</strong> Data Management Plan (DMP)</h3>
+                                <p class="doi-link">
+                                    <a href="https://doi.org/10.5281/zenodo.17368885" class="doi">DOI: 10.5281/zenodo.17368885</a>
+                                </p>
+                            </div>
+                        </div>
+                    </a>
+                    
+                    <a href="documents/deliverables/D2.1.pdf" target="_blank" rel="noopener noreferrer">
+                        <div class="list-card">
+                            <div class="content">
+                                <h3 class="title"><strong>Deliverable D2.1:</strong> Workflow for Downloading and Standardising Clinical Literature and Supplementary Materials</h3>
+                                <p class="doi-link">
+                                    <a href="https://doi.org/10.5281/zenodo.15423127" class="doi">DOI: 10.5281/zenodo.15423127</a>
+                                </p>
+                            </div>
+                        </div>
+                    </a>
+    
+                    <a href="documents/deliverables/D2.2.pdf" target="_blank" rel="noopener noreferrer">
+                        <div class="list-card">
+                            <div class="content">
+                                <h3 class="title"><strong>Deliverable D2.2:</strong> Auto-Corpus: Standardised Clinical Literature and Supplementary Materials</h3>
+                                <p class="doi-link">
+                                    <a href="https://doi.org/10.5281/zenodo.15432200" class="doi">DOI: 10.5281/zenodo.15432200</a>
+                                </p>
+                            </div>
+                        </div>
+                    </a>
+    
+                    <a href="documents/deliverables/D2.3.pdf" target="_blank" rel="noopener noreferrer">
+                        <div class="list-card">
+                            <div class="content">
+                                <h3 class="title"><strong>Deliverable D2.3:</strong> Auto-Corpus Version 2.0: Standardised Clinical Literature and Supplementary Materials</h3>
+                                <p class="doi-link">
+                                    <a href="https://doi.org/10.5281/zenodo.15432594" class="doi">DOI: 10.5281/zenodo.15432594</a>
+                                </p>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="documents/deliverables/D3.1.pdf" target="_blank" rel="noopener noreferrer">
+                        <div class="list-card">
+                            <div class="content">
+                                <h3 class="title"><strong>Deliverable D3.1:</strong> The specification of the meta-data enrichment model</h3>
+                                <p class="doi-link">
+                                    <a href="https://doi.org/10.5281/zenodo.17366390" class="doi">DOI: 10.5281/zenodo.17366390</a>
+                                </p>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="documents/deliverables/D5.1.pdf" target="_blank" rel="noopener noreferrer">
+                        <div class="list-card">
+                            <div class="content">
+                                <h3 class="title"><strong>Deliverable D5.1:</strong> UML specification describing the development of the new index and its integration within SIBiLS</h3>
+                                <p class="doi-link">
+                                    <a href="https://doi.org/10.5281/zenodo.17366749" class="doi">DOI: 10.5281/zenodo.17366749</a>
+                                </p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+        </section>
+
+        <!-- Footer -->
+        <section id="footer">
+            <hr>
+            <img alt="Chist-era logo" src="./images/chist-logo.svg"/>
+        </section>
+
+        <!-- Scripts -->
+        <script src="assets/js/jquery.min.js"></script>
+        <script src="assets/js/jquery.scrolly.min.js"></script>
+        <script src="assets/js/browser.min.js"></script>
+        <script src="assets/js/breakpoints.min.js"></script>
+        <script src="assets/js/util.js"></script>
+        <script src="assets/js/main.js"></script>
+    </div>
+</section>
+<div id="member-dialog" draggable="false" closeText="close">
+    <div class="dialog-content">
+        <div class="profile-picture">
+            <img id="dialog-profile-pic" src="" alt="Profile Picture">
+        </div>
+        <div class="bio">
+            <h2 id="dialog-name">Name</h2>
+            <p id="dialog-bio-content">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam et ligula metus.</p>
+        </div>
+    </div>
+</div>
+</body>
+<script src="assets/js/jquery-ui.min.js"></script>
+<script>
+    $(document).ready(function() {
+        $("#member-dialog").dialog({
+            autoOpen: false,
+            show: {
+                effect: "fade",
+                duration: 250
+            },
+            hide: {
+                effect: "fade",
+                duration: 250
+            },
+            closeText: "close",
+            draggable: false,
+            buttons: [
+                {
+                    text: "Close",
+                    click: function() {
+                        $(this).dialog("close");
+                    }
+                }
+            ]
+
+        });
+        $(".ui-dialog-titlebar").hide();
+
+       $(".member-bio-btn").on("click", function () {
+           let newSrc = $(this).parents(".member").find(".profile-pic")[0].src;
+           $("#dialog-profile-pic").attr("src", newSrc);
+
+           let newText = $(this).parents(".member").find(".expanded-text")[0].textContent;
+           $("#dialog-bio-content").text(newText);
+
+           let newName = $(this).parents(".member").find(".member-name")[0].textContent;
+           $("#dialog-name").text(newName);
+
+           $("#member-dialog").dialog("open");
+       });
+    });
+</script>
+</html>
+
