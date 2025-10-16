@@ -1,0 +1,149 @@
+<!DOCTYPE HTML>
+<!--
+	Photon by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html lang="en-US">
+<head>
+    <title>FAIRClinical</title>
+    <meta charset="utf-8"/>
+    <meta content="width=device-width, initial-scale=1, user-scalable=no" name="viewport"/>
+    <link href="assets/css/main.css" rel="stylesheet"/>
+    <link href="assets/css/jquery-ui.structure.min.css" rel="stylesheet">
+    <noscript>
+        <link href="assets/css/noscript.css" rel="stylesheet"/>
+    </noscript>
+</head>
+<!-- Nav Bar-->
+<div class="topnav" id="nav">
+    <a href="index.html">Home</a>
+    <a href="members.html">Team</a>
+    <a href="news.html">News</a>
+    <a href="deliverables.html">Deliverables</a>
+    <a class="active" href="publications.html">Publications</a>
+    <a class="icon" href="javascript:void(0);" onclick="myFunction()">
+        <i class="fa fa-bars"></i>
+    </a>
+</div>
+<body class="is-preload">
+<!-- Five -->
+<section class="main style1" id="five">
+    <div class="container">
+        <section>
+
+                <h2>Publications</h2>
+                <hr>
+                <!--								UK group -->
+                <div class="link-list">
+                    <a href="documents/publications/Generation of Synthetic Clinical Text.pdf" target="_blank" rel="noopener noreferrer">
+                        <div class="list-card">
+                            <div class="content">
+                                <h3 class="title"><strong>Generation of Synthetic Clinical Text: A Systematic Review</strong></h3>
+                    </a>
+                                <p> <em>Basel Alshaikhdeeb, Ahmed Abdelmonem Hemedan, Soumyabrata Ghosh, Irina Balaur, and Venkata Satagopam</em> (2025)</p>
+                                <p class="doi-link">
+                                    <a href="https://doi.org/10.48550/arXiv.2507.18451" class="doi">DOI: 10.48550/arXiv.2507.18451</a>
+                                </p>
+                            </div>
+                        </div>
+
+    
+                    <a href="documents/publications/Reproducibility in Named Entity Recognition.pdf" target="_blank" rel="noopener noreferrer">
+                        <div class="list-card">
+                            <div class="content">
+                                <h3 class="title"><strong>Reproducibility in Named Entity Recognition: A Case Study Analysis</strong></h3>
+                    </a>
+                                <p> <em>Carlos Cuevas Villarmin, Sarah Cohen-Boulakia, and Nona Naderi </em>(2024)</p>
+                                <p class="doi-link">
+                                    <a href="https://doi.org/10.1109/e-Science62913.2024.10678721" class="doi">DOI: 10.1109/e-Science62913.2024.10678721</a>
+                                </p>
+                            </div>
+                        </div>
+
+    
+                    <a href="documents/publications/SemEval_2024_Task_2-2.pdf" target="_blank" rel="noopener noreferrer">
+                        <div class="list-card">
+                            <div class="content">
+                                <h3 class="title"><strong>SEME at SemEval-2024 Task 2: Comparing Masked and Generative Language Models on Natural Language Inference for Clinical Trials</strong></h3>
+                    </a>
+                                <p> <em>Mathilde Aguiar, Pierre Zweigenbaum, and Nona Naderi</em> (2024)</p>
+                                <p class="doi-link">
+                                    <a href="https://doi.org/10.18653/v1/2024.semeval-1.143" class="doi">DOI: 10.18653/v1/2024.semeval-1.143</a>
+                                </p>
+                            </div>
+                        </div>
+                    <a href="https://stackoverflow.com" class="card-link">
+                </div>
+        </section>
+
+        <!-- Footer -->
+        <section id="footer">
+            <hr>
+            <img alt="Chist-era logo" src="./images/chist-logo.svg"/>
+        </section>
+
+        <!-- Scripts -->
+        <script src="assets/js/jquery.min.js"></script>
+        <script src="assets/js/jquery.scrolly.min.js"></script>
+        <script src="assets/js/browser.min.js"></script>
+        <script src="assets/js/breakpoints.min.js"></script>
+        <script src="assets/js/util.js"></script>
+        <script src="assets/js/main.js"></script>
+    </div>
+</section>
+<div id="member-dialog" draggable="false" closeText="close">
+    <div class="dialog-content">
+        <div class="profile-picture">
+            <img id="dialog-profile-pic" src="" alt="Profile Picture">
+        </div>
+        <div class="bio">
+            <h2 id="dialog-name">Name</h2>
+            <p id="dialog-bio-content">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam et ligula metus.</p>
+        </div>
+    </div>
+</div>
+</body>
+<script src="assets/js/jquery-ui.min.js"></script>
+<script>
+    $(document).ready(function() {
+        $("#member-dialog").dialog({
+            autoOpen: false,
+            show: {
+                effect: "fade",
+                duration: 250
+            },
+            hide: {
+                effect: "fade",
+                duration: 250
+            },
+            closeText: "close",
+            draggable: false,
+            buttons: [
+                {
+                    text: "Close",
+                    click: function() {
+                        $(this).dialog("close");
+                    }
+                }
+            ]
+
+        });
+        $(".ui-dialog-titlebar").hide();
+
+       $(".member-bio-btn").on("click", function () {
+           let newSrc = $(this).parents(".member").find(".profile-pic")[0].src;
+           $("#dialog-profile-pic").attr("src", newSrc);
+
+           let newText = $(this).parents(".member").find(".expanded-text")[0].textContent;
+           $("#dialog-bio-content").text(newText);
+
+           let newName = $(this).parents(".member").find(".member-name")[0].textContent;
+           $("#dialog-name").text(newName);
+
+           $("#member-dialog").dialog("open");
+       });
+    });
+</script>
+</html>
+
